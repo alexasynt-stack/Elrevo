@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elegant Revolution — Premium Classic Fashion</title>
+  <meta name="description" content="Elegant Revolution — Premium Classic Fashion. Luxury made timeless.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Social / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elegant Revolution — Premium Classic Fashion">
+  <meta property="og:description" content="Handcrafted pieces, limited runs. Premium fabrics and expert craftsmanship.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Elegant Revolution",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.svg",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="site-header" role="banner">
+    <div class="max-width nav-inner">
+      <div class="brand" id="brand">
+        <a href="#" class="brand-link" aria-label="Elegant Revolution — home">
+          <!-- inline SVG logo so no external file is required -->
+          <svg class="logo" width="44" height="44" viewBox="0 0 48 48" role="img" aria-labelledby="logoTitle logoDesc" focusable="false">
+            <title id="logoTitle">Elegant Revolution</title>
+            <desc id="logoDesc">Monogram ER in square</desc>
+            <rect width="48" height="48" rx="8" fill="#111"></rect>
+            <text x="24" y="30" fill="#fff" font-size="14" font-family="Poppins, sans-serif" text-anchor="middle" font-weight="600">ER</text>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">Elegant Revolution</span>
+            <span class="brand-tag">Luxury made timeless</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">
+          <span class="sr-only">Open menu</span>
+          ☰
+        </button>
+        <ul id="siteNav" class="nav-links" role="menubar">
+          <li role="none"><a role="menuitem" href="#products">Collection</a></li>
+          <li role="none"><a role="menuitem" href="#lookbook">Lookbook</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO with video background -->
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading" role="region">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1600&q=80"
+        aria-hidden="true"
+      >
+        <!-- kept local video sources if you host them; poster is remote and reliable -->
+        <source src="/assets/hero.webm" type="video/webm">
+        <source src="/assets/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag. A poster image will be shown instead.
+      </video>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1 id="hero-heading">Elegant Revolution</h1>
+        <p class="hero-sub">Premium • Classic • Modern</p>
+        <p class="hero-lead">Handcrafted pieces. Limited runs. Meticulous tailoring for a lifetime of wear.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">Explore Collection</a>
+          <a href="#lookbook" class="btn-ghost">View Lookbook</a>
+        </div>
+        <div class="hero-extra">Limited Editions • Ethically Sourced • Tailored</div>
+      </div>
+
+      <noscript>
+        <style>
+          .hero { background-image: url("https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1600&q=80"); background-size: cover; background-position: center; }
+          .hero-video { display: none; }
+        </style>
+      </noscript>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section class="promo" aria-label="Promotional banner">
+      <div class="max-width promo-inner">
+        <p><strong>Pre-order now:</strong> Free tailoring for orders made before 15 December. Use code: TAILOR2025</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS / GRID -->
+    <section id="products" class="products-grid-section" role="region" aria-label="Featured collection">
+      <div class="max-width section-head">
+        <h2>Featured Collection</h2>
+        <p class="muted">Handcrafted pieces — limited runs</p>
+      </div>
+
+      <div class="max-width products-grid" role="list" aria-label="Product listing">
+        <!-- Card 1 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-JKT-001">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Classic Tailored Jacket">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?auto=format&fit=crop&w=900&q=80"
+            alt="Classic Tailored Jacket"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Classic Tailored Jacket</h3>
+            <p class="product-desc">Italian wool, hand-finished seams, structured shoulder and subtle tapering.</p>
+            <div class="product-meta">
+              <span class="price">AED 1,450</span>
+              <a href="#product-ER-JKT-001" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-SRT-002">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Silk-Cotton Shirt">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80"
+            alt="Silk-Cotton Shirt"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Silk-Cotton Shirt</h3>
+            <p class="product-desc">Soft silk blend with breathable cotton — refined drape and sheen.</p>
+            <div class="product-meta">
+              <span class="price">AED 420</span>
+              <a href="#product-ER-SRT-002" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-KNT-003">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Midnight Knit Sweater">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80"
+            alt="Midnight Knit Sweater"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Midnight Knit Sweater</h3>
+            <p class="product-desc">Cashmere blend, medium weight, timeless silhouette.</p>
+            <div class="product-meta">
+              <span class="price">AED 560</span>
+              <a href="#product-ER-KNT-003" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-BLT-004">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Signature Leather Belt">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+            alt="Signature Leather Belt"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Signature Leather Belt</h3>
+            <p class="product-desc">Vegetable-tanned leather with handcrafted buckle.</p>
+            <div class="product-meta">
+              <span class="price">AED 250</span>
+              <a href="#product-ER-BLT-004" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-PNT-005">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Slim Wool Trousers">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80"
+            alt="Slim Wool Trousers"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Slim Wool Trousers</h3>
+            <p class="product-desc">Tailored fit, mid-rise, refined crease.</p>
+            <div class="product-meta">
+              <span class="price">AED 780</span>
+              <a href="#product-ER-PNT-005" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-PLT-006">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Summer Linen Shirt">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80"
+            alt="Summer Linen Shirt"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Summer Linen Shirt</h3>
+            <p class="product-desc">Lightweight slub linen for warm climates.</p>
+            <div class="product-meta">
+              <span class="price">AED 380</span>
+              <a href="#product-ER-PLT-006" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-COT-007">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Casual Cotton Tee">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1516685018646-549d54b9a0fa?auto=format&fit=crop&w=900&q=80"
+            alt="Casual Cotton Tee"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Casual Cotton Tee</h3>
+            <p class="product-desc">Long-staple cotton, enzyme washed for softness.</p>
+            <div class="product-meta">
+              <span class="price">AED 160</span>
+              <a href="#product-ER-COT-007" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-X01-008">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Heritage Overcoat">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=900&q=80"
+            alt="Heritage Overcoat"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Heritage Overcoat</h3>
+            <p class="product-desc">Double-faced wool, full canvas, and hand-basted collar.</p>
+            <div class="product-meta">
+              <span class="price">AED 2,200</span>
+              <a href="#product-ER-X01-008" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="product-card" role="listitem" tabindex="0" data-sku="ER-X02-009">
+          <button class="quickview" aria-haspopup="dialog" aria-controls="quickView" data-product="Classic Blazer">Quick view</button>
+          <img
+            src="https://images.unsplash.com/photo-1562158070-2d6a5f9f6f26?auto=format&fit=crop&w=900&q=80"
+            alt="Classic Blazer"
+            loading="lazy"
+            width="600"
+            height="420"
+          >
+          <div class="product-body">
+            <h3 class="product-title">Classic Blazer</h3>
+            <p class="product-desc">Unlined for breathable comfort, sharp notched lapel.</p>
+            <div class="product-meta">
+              <span class="price">AED 1,150</span>
+              <a href="#product-ER-X02-009" class="btn-link">View details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="max-width show-more">
+        <button id="loadMore" class="btn-secondary">Load more</button>
+      </div>
+    </section>
+
+    <!-- QUICK VIEW MODAL -->
+    <div id="quickView" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="quickViewTitle">
+      <div class="modal-backdrop" data-dismiss="modal"></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" aria-label="Close quick view" data-dismiss="modal">&times;</button>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?auto=format&fit=crop&w=1200&q=80" alt="Product image" id="modalImg" loading="lazy" width="720" height="480">
+          </div>
+          <div class="modal-info">
+            <h3 id="quickViewTitle">Product name</h3>
+            <p id="quickViewDesc">Product description</p>
+            <p class="price" id="quickViewPrice">AED 0</p>
+
+            <form id="quickViewForm" aria-labelledby="quickViewTitle">
+              <label for="sizeSelect">Size</label>
+              <select id="sizeSelect" name="size">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M" selected>M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+              </select>
+
+              <label for="qty">Quantity</label>
+              <input id="qty" name="qty" type="number" min="1" value="1" />
+
+              <button type="submit" class="btn-primary">Add to cart</button>
+            </form>
+
+            <div class="product-details">
+              <h4>Details</h4>
+              <ul>
+                <li>Fabric: 100% Italian wool</li>
+                <li>Made in: Portugal</li>
+                <li>Care: Dry clean only</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOOKBOOK -->
+    <section id="lookbook" class="lookbook" role="region" aria-label="Lookbook">
+      <div class="max-width section-head">
+        <h2>Lookbook</h2>
+        <p class="muted">Scenes from our atelier and seasonal shoots</p>
+      </div>
+
+      <div class="max-width lookbook-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1200&q=80" alt="Lookbook image 1" loading="lazy">
+          <figcaption>Autumn/Winter collection — Atelier</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=1200&q=80" alt="Lookbook image 2" loading="lazy">
+          <figcaption>Studio portrait — Tailoring details</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80" alt="Lookbook image 3" loading="lazy">
+          <figcaption>Craftsmanship — hand-stitching</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80" alt="Lookbook image 4" loading="lazy">
+          <figcaption>Materials — curated fabrics</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" role="region" aria-label="About Elegant Revolution">
+      <div class="max-width about-inner">
+        <div class="about-copy">
+          <h2>Our Philosophy</h2>
+          <p>Elegant Revolution blends classic tailoring with modern design. We pursue a quiet kind of luxury — refined materials, expert craftsmanship and small-batch production. We make pieces that endure, both physically and stylistically.</p>
+
+          <h3>Our process</h3>
+          <ol>
+            <li>Source premium fabrics from trusted mills.</li>
+            <li>Prototype and fit with our in-house cutters.</li>
+            <li>Hand-finish select seams and do full quality inspection.</li>
+          </ol>
+        </div>
+
+        <div class="about-stats" aria-hidden="false">
+          <div class="stat">
+            <strong>Small-batch</strong>
+            <span>Limited runs — quality first</span>
+          </div>
+          <div class="stat">
+            <strong>Made responsibly</strong>
+            <span>Ethical suppliers and low-waste production</span>
+          </div>
+          <div class="stat">
+            <strong>By appointment</strong>
+            <span>Atelier in Dubai — visits by appointment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIZE GUIDE -->
+    <section id="size" class="size-guide" role="region" aria-label="Size guide">
+      <div class="max-width section-head">
+        <h2>Size Guide</h2>
+        <p class="muted">How to measure</p>
+      </div>
+
+      <div class="max-width size-grid">
+        <div>
+          <h3>How to measure</h3>
+          <ol>
+            <li>Chest — measure around the fullest part.</li>
+            <li>Waist — measure at natural waistline.</li>
+            <li>Hip — measure around fullest part of your hips.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Conversion chart</h3>
+          <table>
+            <thead>
+              <tr><th>Size</th><th>Chest (cm)</th><th>Waist (cm)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>S</td><td>90–96</td><td>76–82</td></tr>
+              <tr><td>M</td><td>96–102</td><td>82–88</td></tr>
+              <tr><td>L</td><td>102–108</td><td>88–94</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq" role="region" aria-label="Frequently asked questions">
+      <div class="max-width section-head">
+        <h2>FAQ</h2>
+        <p class="muted">Common questions about orders and shipping</p>
+      </div>
+
+      <div class="max-width faq-list">
+        <details>
+          <summary>What is your return policy?</summary>
+          <p>We accept returns within 14 days of delivery for unworn items with tags attached. Custom and tailored items are final sale.</p>
+        </details>
+
+        <details>
+          <summary>How long does shipping take?</summary>
+          <p>Domestic (UAE) shipping typically 2–4 business days. International shipping 5–10 business days depending on destination and customs.</p>
+        </details>
+
+        <details>
+          <summary>Do you offer tailoring?</summary>
+          <p>We offer complimentary minor tailoring for a limited period after purchase. For comprehensive alterations we recommend visiting a local tailor or booking our atelier service.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- SHIPPING & RETURNS -->
+    <section id="shipping" class="shipping" role="region" aria-label="Shipping and returns">
+      <div class="max-width section-head">
+        <h2>Shipping & Returns</h2>
+      </div>
+
+      <div class="max-width shipping-inner">
+        <div>
+          <h3>Shipping partners</h3>
+          <p>We ship with trusted carriers only. Orders are dispatched from our Dubai atelier with tracking provided by email.</p>
+        </div>
+        <div>
+          <h3>Returns</h3>
+          <p>To initiate a return, contact hello@elrevo.com with your order number and reason. We'll send a prepaid label for domestic returns where available.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS & CAREERS -->
+    <section id="press" class="press" role="region" aria-label="Press and careers">
+      <div class="max-width section-head">
+        <h2>Press & Careers</h2>
+      </div>
+
+      <div class="max-width press-grid">
+        <div>
+          <h3>Press inquiries</h3>
+          <p>For editorial enquiries, sample requests, or press imagery, email press@elrevo.com</p>
+        </div>
+        <div>
+          <h3>Careers</h3>
+          <p>We recruit periodically for skilled cutters, stitchers and retail staff. Submit your CV to careers@elrevo.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessibility Statement -->
+    <section id="accessibility" class="accessibility" role="region" aria-label="Accessibility statement">
+      <div class="max-width section-head">
+        <h2>Accessibility</h2>
+      </div>
+
+      <div class="max-width">
+        <p>We aim to make our site accessible to everyone. If you notice anything that makes it difficult to use, please email accessibility@elrevo.com with the page URL and a brief description.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT & NEWSLETTER -->
+    <section id="contact" class="contact" role="region" aria-label="Contact and newsletter">
+      <div class="max-width contact-inner">
+        <div class="contact-form">
+          <h3 id="newsletter-heading">Join our newsletter</h3>
+          <p>Get early access to drops and exclusive previews.</p>
+          <form id="newsletter" aria-labelledby="newsletter-heading" novalidate>
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required autocomplete="email" />
+            <button type="submit" class="btn-secondary">Subscribe</button>
+            <div id="newsletter-status" aria-live="polite" class="newsletter-status" role="status"></div>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:hello@elrevo.com">hello@elrevo.com</a></p>
+          <p>Atelier: Dubai (by appointment)</p>
+          <p>Phone: <a href="tel:+971500000000">+971 50 000 0000</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITEMAP -->
+    <section id="sitemap" class="sitemap" role="navigation" aria-label="Site map">
+      <div class="max-width">
+        <h3>Site map</h3>
+        <ul class="sitemap-list">
+          <li><a href="#products">Collection</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#size">Size guide</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#shipping">Shipping</a></li>
+          <li><a href="#press">Press & Careers</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="max-width footer-inner">
+        <div class="footer-left">
+          <div>© <span id="year"></span> Elegant Revolution</div>
+          <nav aria-label="Footer">
+            <ul class="footer-links">
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#terms">Terms</a></li>
+              <li><a href="#cookies">Cookies</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-right">
+          <div class="socials" aria-hidden="false">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
