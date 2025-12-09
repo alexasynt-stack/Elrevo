@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elegant Revolution — Premium Classic Fashion</title>
+  <meta name="description" content="Elegant Revolution — Premium Classic Fashion. Luxury made timeless.">
+
+  <!-- Social / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elegant Revolution — Premium Classic Fashion">
+  <meta property="og:description" content="Handcrafted pieces, limited runs. Premium fabrics and expert craftsmanship.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1514996937319-344454492b37?w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Elegant Revolution",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.svg",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="logo.svg" alt="Elegant Revolution — Luxury made timeless" class="logo-img" />
+        <div class="brand-text">
+          <div class="brand-name">Elegant Revolution</div>
+          <div class="brand-tag">Luxury made timeless</div>
+        </div>
+      </div>
+
+      <div class="nav-links" id="primary-navigation">
+        <a href="#products">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO with video background -->
+  <header class="hero" id="main" role="banner" aria-label="Hero section">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1600&q=80"
+      aria-hidden="true"
+    >
+      <!-- Replace these with your hosted assets. The .webm improves compression/compatibility where supported. -->
+      <source src="/assets/hero.webm" type="video/webm">
+      <source src="/assets/hero.mp4" type="video/mp4">
+      <!-- Fallback image will display if video not supported -->
+      <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1600&q=80" alt="Model in studio" />
+    </video>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>Elegant Revolution</h1>
+      <p class="hero-sub">Premium • Classic • Modern</p>
+      <a href="#products" class="btn-primary">Explore Collection</a>
+      <div class="hero-small">Limited Editions • Ethically Sourced • Tailored</div>
+    </div>
+  </header>
+
+  <!-- PRODUCTS / Slider -->
+  <section id="products" class="products-section" role="region" aria-label="Featured collection">
+    <div class="section-head">
+      <h2>Featured Collection</h2>
+      <p class="muted">Handcrafted pieces — limited runs</p>
+    </div>
+
+    <div class="slider-wrap">
+      <button class="slide-btn left" id="prevBtn" aria-label="Previous items" aria-controls="slider">&lt;</button>
+
+      <div class="slider" id="slider" role="list" tabindex="0" aria-label="Product slider">
+        <!-- Card 1 -->
+        <article class="card" role="listitem" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=900&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=800&q=80 800w,
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=1200&q=80 1200w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 300px"
+            alt="Tailored jacket on mannequin"
+            loading="lazy"
+          >
+          <div class="card-body">
+            <h3>Classic Tailored Jacket</h3>
+            <p class="price">AED 1,450</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" role="listitem" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800&q=80 800w,
+              https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200&q=80 1200w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 300px"
+            alt="Silk-cotton shirt on hanger"
+            loading="lazy"
+          >
+          <div class="card-body">
+            <h3>Silk-Cotton Shirt</h3>
+            <p class="price">AED 420</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" role="listitem" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=900&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&q=80 800w,
+              https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=1200&q=80 1200w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 300px"
+            alt="Knit sweater draped on chair"
+            loading="lazy"
+          >
+          <div class="card-body">
+            <h3>Midnight Knit Sweater</h3>
+            <p class="price">AED 560</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" role="listitem" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=900&q=80"
+            srcset="
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=400&q=80 400w,
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=800&q=80 800w,
+              https://images.unsplash.com/photo-1520974735194-6c07ae0f35a4?w=1200&q=80 1200w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 300px"
+            alt="Signature leather belt on wooden table"
+            loading="lazy"
+          >
+          <div class="card-body">
+            <h3>Signature Leather Belt</h3>
+            <p class="price">AED 250</p>
+          </div>
+        </article>
+      </div>
+
+      <button class="slide-btn right" id="nextBtn" aria-label="Next items" aria-controls="slider">&gt;</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section" role="region" aria-label="About us">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>Our Philosophy</h2>
+        <p>Elegant Revolution blends classic tailoring with modern design. Premium fabrics, expert craftsmanship and small-batch production. We create pieces that last — for those who value understatement and quality.</p>
+      </div>
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1514996937319-344454492b37?w=900&q=80"
+          alt="Atelier workspace with fabrics and sewing tools"
+          loading="lazy"
+          sizes="(max-width: 800px) 90vw, 400px"
+          srcset="
+            https://images.unsplash.com/photo-1514996937319-344454492b37?w=400&q=80 400w,
+            https://images.unsplash.com/photo-1514996937319-344454492b37?w=800&q=80 800w,
+            https://images.unsplash.com/photo-1514996937319-344454492b37?w=1200&q=80 1200w
+          "
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" role="region" aria-label="Client testimonials">
+    <h3>What Clients Say</h3>
+    <div class="test-grid">
+      <blockquote>“Perfect fit and the fabric feels amazing.” <cite>— Aisha R.</cite></blockquote>
+      <blockquote>“The tailoring is next level — true luxury.” <cite>— Omar K.</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / CONTACT -->
+  <section id="contact" class="contact-section" role="region" aria-label="Contact and newsletter">
+    <div class="contact-inner">
+      <div>
+        <h3 id="newsletter-heading">Join our newsletter</h3>
+        <p>Get early access to drops and exclusive previews.</p>
+        <form id="newsletter" aria-labelledby="newsletter-heading" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required autocomplete="email" />
+          <button type="submit" class="btn-secondary">Subscribe</button>
+        </form>
+
+        <div id="newsletter-status" aria-live="polite" class="newsletter-status" role="status"></div>
+      </div>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:hello@elrevo.com">hello@elrevo.com</a></p>
+        <p>Atelier: Dubai (by appointment)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Elegant Revolution</div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
